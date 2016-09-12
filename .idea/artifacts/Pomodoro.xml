@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="Pomodoro">
+    <output-path>$USER_HOME$/Desktop/code/Pomodoro</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="alias" value="" />
+        <option name="appClass" value="com.teamtreehouse.pomodoro.Main" />
+        <option name="description" value="" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="keystore" value="" />
+        <option name="title" value="" />
+        <option name="vendor" value="" />
+        <option name="version" value="" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="Pomodoro.jar">
+        <element id="module-output" name="Pomodoro" />
+      </element>
+    </root>
+  </artifact>
+</component>
