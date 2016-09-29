@@ -1,0 +1,18 @@
+	Requirements:
+1 This application must track time when we in work mode
+2 This application must track time when we in rest mode
+3 This applicatiom must have a setup mode
+	3.1 This set up mode will take time to set for a work mode (25min - 50 min)
+	3.2 This set up mode will take time to set for a break time (5min - 20min)
+
+
+	Use Case:
+1. On start the app should display a predefined work time. (25:00)
+2. On start the app should display a predefined rest time. (5:00)
+3. User should be able to start timer.
+4. User should be able to pause or stop timer.
+5. User should be able to switch to setting mode.
+	5.1 In setting mode a user should be able to set timer to a time he/she prefers.
+	5.2 After setting time user should be able to go back to main screen with new settings.
+
+ 	 

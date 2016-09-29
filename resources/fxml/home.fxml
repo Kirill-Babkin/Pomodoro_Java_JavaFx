@@ -8,15 +8,31 @@
 <VBox stylesheets="/css/main.css"
       xmlns="http://javafx.com/javafx/8"
       xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.teamtreehouse.pomodoro.controllers.Home"
+      fx:controller="tech.kilocode.pomodoro.controllers.Home"
       fx:id="container">
     <children>
+        <Button fx:id="setting_button" onAction="#showSetting">
+            <graphic>
+                <Label text="Setting" />
+                <ImageView fitWidth="20" fitHeight="20" id="setting_image">
+                    <image>
+                        <Image url="/images/settings.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
 
         <Label fx:id="title" text="Pomodoro"/>
 
         <Label fx:id="time" text="${controller.timerText}"/>
 
-        <HBox styleClass="buttons">
+        <HBox fx:id="setting_controls" styleClass="hide">
+
+        </HBox>
+
+
+
+        <HBox fx:id="action_buttons" styleClass="buttons">
             <children>
                 <StackPane>
                     <children>
@@ -63,6 +79,6 @@
                 <Image url="/images/pomodoro.png"/>
             </image>
         </ImageView>
-
     </children>
 </VBox>
+<!--setting view-->

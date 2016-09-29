@@ -1,7 +1,7 @@
-package com.teamtreehouse.pomodoro.controllers;
+package tech.kilocode.pomodoro.controllers;
 
-import com.teamtreehouse.pomodoro.model.Attempt;
-import com.teamtreehouse.pomodoro.model.AttemptKind;
+import tech.kilocode.pomodoro.model.Attempt;
+import tech.kilocode.pomodoro.model.AttemptKind;
 import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
@@ -11,9 +11,12 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.media.AudioClip;
 import javafx.util.Duration;
+
+import java.io.Console;
 
 public class Home {
     @FXML
@@ -25,6 +28,11 @@ public class Home {
     @FXML
     private TextArea message;
 
+    @FXML
+    private HBox action_buttons;
+
+    @FXML
+    private Label time;
     private Attempt mCurrentAttempt;
     private StringProperty mTimerText;
     private Timeline mTimeline;
@@ -107,6 +115,16 @@ public class Home {
         }
 
     }
+
+    //hides the initial view and loads the setting view.
+    public void showSetting(ActionEvent actionEvent){
+        action_buttons.getStyleClass().add("hide");
+        message.getStyleClass().add("hide");
+        time.getStyleClass().add("hide");
+        System.out.printf("");
+        Console console = System.console();
+    }
+
 
     public void handleRestart(ActionEvent actionEvent) {
         prepareAttempt(AttemptKind.FOCUS);

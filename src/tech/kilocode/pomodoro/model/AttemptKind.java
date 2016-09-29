@@ -1,4 +1,4 @@
-package com.teamtreehouse.pomodoro.model;
+package tech.kilocode.pomodoro.model;
 
 public enum AttemptKind {
     FOCUS(25*60, "Focus Mode"),

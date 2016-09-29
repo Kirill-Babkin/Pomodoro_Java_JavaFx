@@ -1,4 +1,4 @@
-package com.teamtreehouse.pomodoro.model;
+package tech.kilocode.pomodoro.model;
 
 
 public class Attempt {

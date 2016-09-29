@@ -1,8 +1,8 @@
 * {
-    -fx-font-family: 'Varela Round';
-    -fx-alignment: center;
-    -fx-text-fill: #fff;
-}
+     -fx-font-family: 'Varela Round';
+     -fx-alignment: center;
+     -fx-text-fill: #fff;
+ }
 
 #container {
     -fx-background: #35B55C;
@@ -11,6 +11,13 @@
     -fx-spacing: 20px;
 }
 
+.hide {
+    visibility: hidden;
+}
+
+.show{
+    visibility: visible;
+}
 
 #title {
     -fx-font-size: 31px;
@@ -31,16 +38,16 @@
 }
 
 .button {
-  -fx-border-radius: 6px;
-  -fx-border-width: 2px;
-  -fx-border-style: solid;
-  -fx-border-color: #fff;
-  -fx-background-color: none;
-  -fx-text-fill: #fff;
-  -fx-fill-width: true;
-  -fx-cursor: pointer;
-  -fx-padding: 10px 10px 10px 37px;
-  -fx-font-size: 20px;
+    -fx-border-radius: 6px;
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+    -fx-border-color: #fff;
+    -fx-background-color: none;
+    -fx-text-fill: #fff;
+    -fx-fill-width: true;
+    -fx-cursor: pointer;
+    -fx-padding: 10px 10px 10px 37px;
+    -fx-font-size: 20px;
 
 }
 
@@ -101,7 +108,18 @@
 .break {
     -fx-background-color: #3F8ABF;
 }
+.setting {
+    -fx-background-color: coral;
+}
 
 #pomodoro {
     -fx-fit-height: 34px;
+}
+#setting_button {
+    -fx-translate-x: 150px;
+    -fx-padding: 5px 5px 5px 5px;
+}
+#setting_image{
+    -fx-fit-to-width: 20px;
+    -fx-fit-to-height: 20px;
 }
